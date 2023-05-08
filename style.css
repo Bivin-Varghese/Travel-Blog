@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+#home {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+
+    background-image: url(./images/bgedit.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    opacity: .6;
+
+}
+
+.h-content {
+    position: absolute;
+    top: 180px;
+    right: 200px;
+    color: white;
+    text-align: center;
+}
+
+
+
+.h-content h1 {
+    font-family: 'Kalam', cursive;
+    font-size: 100px;
+    letter-spacing: -6px;
+    line-height: 28px;
+
+}
+
+.h-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.pa {
+    width: 550px;
+    font-size: 30px;
+    text-align: justify;
+    letter-spacing: -2px;
+    line-height: 40px;
+
+}
+
+#home button {
+    background-color: rgb(240, 157, 2);
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 50px;
+    border: none;
+    box-shadow: 0px 8px rgb(172, 112, 2);
+}
+
+@media(max-width:800px){
+    .h-content{
+        top: 300px;
+        right:15px ;
+    }
+    .h-content h1{
+        font-size: 90px;
+    }
+    .h-content h2{
+        font-size: 36px;
+    }
+    .pa{
+        
+        display: none;
+    }
+    #home button{
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+
+
+/* start  */
+
+
+.start {
+    margin-top: 60px;
+
+}
+
+.start h2 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Kalam', cursive;
+    margin-bottom: 18px;
+
+}
+
+.s-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 38px;
+
+}
+
+.s-container p{
+    font-size: 24px;
+    font-weight: 500;
+} 
+
+.s-container .card{
+box-shadow: 0px 1px 6px grey , 0px 1px 6px grey;
+}
+
+.s-container .card:hover{
+    transform: scale(1.08);
+    transition: 1s;
+}
+
+
+
+/* carousel  */
+
+.carousel{
+    /* height: 100px; */
+}
+
+.carousel img{
+    height: 90vh;
+}
+
+.container h2{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Kalam', cursive;
+    margin-top: 80px;
+    margin-bottom: 18px;
+}
+.container h5{
+    font-size: 30px;
+    color:white
+
+}
+
+/* about  */
+
+.about{
+    display: flex;
+    min-height: 200px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    justify-content: center;
+
+    
+}
+
+.a1{
+    width: 66%;
+}
+
+.a1 h2{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Kalam', cursive;
+    margin-bottom: 18px;
+}
+
+.a1 p{
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+
+
+.a2 img{
+   height: 90%;
+   width: 300px;
+   margin-top:20px;
+
+   
+}
+
+@media (max-width:800px){
+    .a2 img{
+        display: none;
+    }
+    .a1 {
+        padding:20px;
+        width: 100%;   
+    }
+
+}
+
+
+
+
+/* footer  */
+
+.footer i{
+    color: white;
+}
